@@ -1,0 +1,71 @@
+   
+      <section class="navbar-fix navbar__bottom">
+        <nav id="menu" class="top-0 d-none d-lg-block">
+          <div class="menu d-none d-md-flex position-relative">
+            <div class="logo d-md-block pt-4 pt-md-0">
+              <a href="{{ path('app_front') }}"
+                ><img
+                  src="{{ asset("images/logo/Logo_Escapade_Tour.png") }}"
+                  width="130px"
+                  alt="Logo Escapade Tour"
+              /></a>
+            </div>
+
+            <div class="menu__content container-menu d-md-flex">
+              <ul class="d-md-flex p-0 ps-md-4">
+                <li class="nav-item dropdown list-group my-auto">
+                  <a
+                    class="nav-link dropdown-toggle text-white"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Destination
+                  </a>
+                  <ul
+                    class="dropdown-menu ms-3"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="">USA</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="">Canada</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="">Mexique</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item active list-group my-auto">
+                  <a class="nav-link text-white" href="">Contact</a>
+                </li>
+              </ul>
+              <ul class="menu-right d-md-flex end-0 p-0 ps-md-4">
+                <li class="nav-item active list-group my-auto cc">
+                  <a class="nav-link text-warning" href="{{ path('app_login') }}">Connexion</a>
+                </li>
+                <li class="nav-item active list-group my-auto">
+                  <a class="nav-link text-white" href="{{ path('inscription') }}">Inscription</a>
+                </li>
+              </ul>
+              <div
+                id="contact"
+                class="d-md-none d-flex flex-column justify-content-center"
+              >
+                <a href="" class="phone btn btn-primary mb-0 mx-auto"
+                  >01-02-03-04-05</a
+                >
+                <br />
+                <a
+                  href=""
+                  class="text-secondary text-center mt-0 text-decoration-none"
+                  >escapade-tour@gmail.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>

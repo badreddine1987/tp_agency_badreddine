@@ -1,0 +1,16 @@
+{{ form_start(form) }}
+    {# {{ form_widget(form) }} #}
+    {{ form_row(form.titre) }}
+     {# Ici je prépare un container qui recervra tous les formulaire pour ajouter des photos #}
+    {# Dans le date-prototype je vais indiquer les données de mon formulaire (PhotoProduit) 
+    Dans chaque formulaire on à ce que l'on appel un prototype qui contient toutes les données du formulaire et que l'on peut utiliser pour construire le formulaire au niveau html #}
+    <div class="container-etape" data-prototype="{{ form_widget(form.etapes.vars.prototype)|e('html_attr') }}">
+        {% for row in form.etapes %}
+        
+            <div class="card-etape">
+                {{ form_widget(row) }}
+            </div>
+        {% endfor %}
+    </div>
+    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}

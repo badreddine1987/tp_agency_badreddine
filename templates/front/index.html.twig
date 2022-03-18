@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello FrontController!
+{% endblock %}
+
+{% block body %}
+	{# =========img==Cover======== #}
+	<div class="cover">
+		<div class="text__title">
+			<p>Des Voyages plus insolite !</p>
+		</div>
+	</div>
+	{# =========img==Cover======== #}
+
+	{# ================Concept=================== #}
+	<section class="section__1">
+		<div class="concept">
+			<h1>Notre Concept</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus earum iusto non perspiciatis harum consectetur molestiae soluta eaque eveniet! Sequi corporis necessitatibus pariatur maxime fuga eos accusantium voluptates fugiat laborum? Rem quia magni, distinctio doloremque id qui tenetur aut suscipit voluptatem minima maiores eos non exercitationem in. Quod odit accusamus quibusdam ab quidem, eius voluptatum, ut possimus quo dignissimos ipsa! Molestiae cupiditate nostrum vel aperiam officiis! Dolore provident, dicta animi suscipit non neque eos. Aliquid ipsum deleniti, minima quo iure accusamus ex quam dolorum, eaque, beatae hic nobis debitis officia. Commodi nisi quasi accusamus dolorum est unde labore harum placeat earum et! Atque velit dolore aliquam, sunt ipsum consequatur iusto praesentium fugit id aut sint saepe ducimus possimus quod nostrum? Possimus veniam unde aspernatur quis. Animi amet fugiat architecto itaque. Veritatis et adipisci alias quam fuga consectetur similique facilis, iusto, iste labore, mollitia veniam quod eveniet corporis voluptatibus quas inventore! Pariatur, consectetur provident. Rerum, fugiat explicabo ea dignissimos illum minima fugit assumenda a, placeat eum voluptatum dicta saepe, reiciendis obcaecati. Reiciendis obcaecati veniam porro laudantium eos soluta doloribus magnam? Ea?</p>
+		</div>
+	</section>
+	{# =================Liste conseiller============== #}
+
+	<section class="section__conseiller__liste">
+		<h1>Nos Experts à votre service</h1>
+		{# ------==============Conseiller=================------ #}
+
+
+		<div
+			class="row parent row-cols-1 row-cols-md-3 g-4">
+			{# ==================CARD============================= #}
+			{% for conseiller in conseillers %}
+
+				<div class="col-4 mx-auto card__conseiller">
+					<a href="#">
+					<div class="card__picture rounded-circle">
+					<img src="{{ asset('images/conseiller/'~ conseiller.photo) }} " alt=""> 
+					</div>
+					<div class="card-body">
+						<h5 class="card-title">{{ conseiller.nom }} {{ conseiller.prenom }}
+							<br/>
+							{{ conseiller.specialite }}</h5>
+						<p class="card-text">{{ conseiller.description }}</p>
+					</div>
+					</a>
+				</div>
+
+			{% endfor %}
+
+		</div>
+		{# ==================CARD============================= #}
+
+
+	</section>
+
+{% endblock %}

@@ -1,0 +1,184 @@
+
+
+body{
+    font-family: 'Playfair Display', serif;
+    background:rgb(232, 236, 235)
+}
+.logo{
+    position:absolute;
+}
+
+.navbar-fix{
+    width:100%;
+    height: 70px;
+    background: rgb(45, 62, 78);
+    font-size: 19px;
+    font-family: 'Playfair Display', serif;
+    z-index: 100;  
+}
+
+.menu__content{
+    padding-left: 130px;
+    padding-top: 13px;
+}
+
+.menu-right{
+    position: absolute;
+    right: 20px;
+}
+
+/* Cover */
+
+.cover{
+    width: 100%;
+    height: 800px;   
+    background: url("../images/logo/new-york.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.text__title{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.555);
+    color: #fff;
+    width: 40%;
+    height: 40px;
+    border-radius: 25PX;
+    left: 30%;
+    top: 380px;
+   text-align: center;
+}
+.text__title p{
+    margin-top: 6px;
+    font-size: 1.3rem;
+}
+
+.section__1{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.concept h1{
+    margin-top: 20px;
+    text-align: center;
+    color: #8CBDB9;
+    font-size: 2rem;
+}
+
+.concept p{
+    margin-top: 40px;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.section__conseiller__liste{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section__conseiller__liste h1{
+    margin-top: 40px;
+    margin-bottom: 70px;
+    text-align: center;
+    color: #8CBDB9;
+    font-size: 2rem;
+}
+
+.card__picture{
+    height: 200px;
+    width: 200px;
+      margin: 20px auto; 
+}
+.card__picture img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+a {
+    text-decoration: none;
+    color: #000;
+  }
+  a:hover{
+    color: #000;
+  }
+
+.card__conseiller{
+    width: 280px;
+    height: 450px;
+    border: 1px solid #000;
+    background : #fff;
+    border-radius: 25px;
+}
+
+/* ==========tableau================================ */
+.tabulation{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 170px;
+}
+/* ================inscription===connexion===================== */
+.inscription {
+    margin-top: 50px;
+  }
+  .connexion{
+      width: 50%;
+      margin: 0 auto;
+      /* margin-top: 290px; */
+ 
+  }
+
+
+
+/* *************FOOTER*************** */
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: rgb(45, 62, 78);
+    margin-top: 150px;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    
+}
+footer p{
+    text-align: center;
+    font-size: 2rem;
+    vertical-align: center;
+  
+}
+
+/* ***************Destination************************ */
+
+.titledestination{
+    text-align: center;
+    margin-top: 20px;
+    color: #8CBDB9;
+    font-size: 2.5rem;
+}
+
+.destination_page p{
+    font-size: 1rem;
+}
+.conseiller_ref{
+   border-radius: 25px;
+   width: 250px;
+   height: 250px;
+}
+.destination_page h5{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #8CBDB9;
+}
+.destination_page{
+   width: 90%;
+   margin: 0 auto;
+}
+
+.ref__etape{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+}
